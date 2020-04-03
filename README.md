@@ -1,6 +1,5 @@
 By Fernando Dávalos
 
-Instructions:
 # Photography-Blog
 
 Photography-Blog is a simple page that is responsive, and adapts to different types of Apple Devices.
