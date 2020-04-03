@@ -234,6 +234,10 @@ button:hover{
     font-size: 1.8rem;
     line-height: 2.2rem;
 }
+
+/* Styles when borders start to touch both divs*/
+
+
 @media only screen and (min-width: 900px) and (max-width: 1000px){
     .container{
         width: 83rem;
@@ -246,6 +250,10 @@ button:hover{
         padding-bottom: 7.6rem;
     }
 }
+
+/*Styles for Devices Bigger than an Iphone*/
+
+
 @media only screen and (min-width: 768px) and (max-width: 900px){
     .container{
         width: 60rem;
@@ -273,7 +281,10 @@ button:hover{
     }
 }
 
+/*Styles for Iphones 6+*/
+
 @media only screen and (min-width: 368px) and (max-width: 767px){
+
     .container{
         width: 34rem;
         margin: 0 auto;
@@ -358,6 +369,8 @@ button:hover{
     }
 }
 
+/*Styles for Iphones 5SE*/
+
 @media only screen and (max-width: 368px){
     html{
         font-size: 8px;
@@ -381,7 +394,7 @@ button:hover{
         grid-area: 'blog';
     }
     .content__header{
-        font-size: 2.4rem;
+        font-size: 3rem;
         line-height: 3.1rem;
         font-weight: 700;
     }
@@ -416,31 +429,31 @@ button:hover{
     .modal_container__title{
         font-style: normal;
         font-weight: 700;
-        font-size: 2rem;
+        font-size: 2.5rem;
         line-height: 2.6rem;
         text-align: center;
     }
     .modal-container__dialog__input{
         height: 4rem;
-        font-size: 1.7rem;
+        font-size: 2.1rem;
         line-height: 2rem;
         text-indent: 1.1rem;
         padding-top: 1rem;
     }
 
     .modal-container__dialog__input:focus + .floating-label{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         line-height: 1.4rem;
         top: 14rem;
     }
 
     .floating-label{
-        font-size: 1.7rem;
+        font-size: 2.1rem;
         top: 15rem;
         left: 3rem;
     }
     .moved{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         line-height: 1.4rem;
         top: 14rem;
     }
