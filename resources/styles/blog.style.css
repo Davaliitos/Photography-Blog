@@ -18,9 +18,6 @@ button{
     background: linear-gradient(90deg, #AC519C 0.83%, #E5424F 100%);
     cursor: pointer;
     box-shadow: 0px 3px 10px rgba(104, 104, 104, 0.5);
-    -moz-box-shadow: 0px 3px 10px rgba(104, 104, 104, 0.5);
-    -ms-box-shadow: 0px 3px 10px rgba(104, 104, 104, 0.5);;
-    -webkit-box-shadow: 0px 3px 10px rgba(104, 104, 104, 0.5);
     padding: 1.1rem 0 1.1rem 0;
 }
 
@@ -128,9 +125,6 @@ button:hover{
     width: 57rem;
     height: 31rem;
     box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5);
-    -ms-box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.5);
     opacity: 1;
 }
 .modal-container__grid{
@@ -239,4 +233,215 @@ button:hover{
     font-weight: 700;
     font-size: 1.8rem;
     line-height: 2.2rem;
+}
+@media only screen and (min-width: 900px) and (max-width: 1000px){
+    .container{
+        width: 83rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas: 'blog sidebar';
+        grid-gap: 3rem;
+        padding-top: 7.6rem;
+        padding-bottom: 7.6rem;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 900px){
+    .container{
+        width: 60rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas:
+            'blog'
+            'sidebar';
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-gap: 3rem;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        overflow-x: hidden;
+    }
+    .content__image{
+        width: 60rem;
+        margin-top: 2rem;
+    }
+    .sidebar{
+        width: 60rem;
+        background: #F5F5F5;
+        grid-area: 'sidebar';
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 368px) and (max-width: 767px){
+    .container{
+        width: 34rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas:
+            'blog'
+            'sidebar';
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-gap: 3rem;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        overflow-x: hidden;
+    }
+    .content{
+        width: 34rem;
+        grid-area: 'blog';
+    }
+    .content__header{
+        font-size: 2.4rem;
+        line-height: 3.1rem;
+        font-weight: 700;
+    }
+    .content__image{
+        width: 34rem;
+        margin-top: 2rem;
+    }
+    .sidebar{
+        width: 34rem;
+        height: 42.6rem;
+        background: #F5F5F5;
+        grid-area: 'sidebar';
+        margin-top: 0;
+    }
+    .sidebar__button{
+        width: 28rem;
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        margin: 3.4rem auto;
+    }
+    .modal-container__dialog{
+        width: 35.5rem;
+        height: 27.2rem;
+    }
+    .modal-container__grid{
+        width: 32rem;
+        grid-template-rows: auto auto auto auto;
+        grid-row-gap: 2rem;
+        margin-top: 1.3rem;
+    }
+    .modal_container__title{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.6rem;
+        text-align: center;
+    }
+    .modal-container__dialog__input{
+        height: 4rem;
+        font-size: 1.7rem;
+        line-height: 2rem;
+        text-indent: 1.1rem;
+        padding-top: 1rem;
+    }
+
+    .modal-container__dialog__input:focus + .floating-label{
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        top: 14rem;
+    }
+
+    .floating-label{
+        font-size: 1.7rem;
+        top: 15rem;
+        left: 3rem;
+    }
+    .moved{
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        top: 14rem;
+    }
+}
+
+@media only screen and (max-width: 368px){
+    html{
+        font-size: 8px;
+    }
+    .container{
+        width: 34rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas:
+            'blog'
+            'sidebar';
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-gap: 3rem;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        overflow-x: hidden;
+    }
+    .content{
+        width: 34rem;
+        grid-area: 'blog';
+    }
+    .content__header{
+        font-size: 2.4rem;
+        line-height: 3.1rem;
+        font-weight: 700;
+    }
+    .content__image{
+        width: 34rem;
+        margin-top: 2rem;
+    }
+    .sidebar{
+        width: 34rem;
+        height: 42.6rem;
+        background: #F5F5F5;
+        grid-area: 'sidebar';
+        margin-top: 0;
+    }
+    .sidebar__button{
+        width: 28rem;
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        margin: 3.4rem auto;
+    }
+    .modal-container__dialog{
+        width: 35.5rem;
+        height: 27.2rem;
+    }
+    .modal-container__grid{
+        width: 32rem;
+        grid-template-rows: auto auto auto auto;
+        grid-row-gap: 2rem;
+        margin-top: 1.3rem;
+    }
+    .modal_container__title{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.6rem;
+        text-align: center;
+    }
+    .modal-container__dialog__input{
+        height: 4rem;
+        font-size: 1.7rem;
+        line-height: 2rem;
+        text-indent: 1.1rem;
+        padding-top: 1rem;
+    }
+
+    .modal-container__dialog__input:focus + .floating-label{
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        top: 14rem;
+    }
+
+    .floating-label{
+        font-size: 1.7rem;
+        top: 15rem;
+        left: 3rem;
+    }
+    .moved{
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        top: 14rem;
+    }
 }
