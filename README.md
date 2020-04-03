@@ -52,7 +52,7 @@ I used the following technologies: Laravel, Html, CSS, Vuejs
 
 # NOTE
 
-There is a bug with webpack. Sometimes it fails to load the moude 'postcss-loader'. If that happens, comment line 120 in the Home.vue file, then save, remove the comment and save again, the page should now show without any problem.
+There is a bug in webpack. Sometimes it fails to load the module 'postcss-loader'. If that happens, comment line 120 in the Home.vue file, save, remove the comment and save again, the page should now show without any problem.
 
 ## Requirements
 
