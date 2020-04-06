@@ -116,6 +116,6 @@ export default{
     }
 }
 </script>
-<style scoped>
+<style lang="scss">
     @import '../../styles/blog.style.css'
 </style>
